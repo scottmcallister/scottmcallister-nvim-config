@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", '<leader>e', vim.cmd.NvimTreeFocus)
 vim.keymap.set("n", '<leader>cc', vim.cmd.CopilotChat)
+vim.keymap.set("v", '<leader>cc', vim.cmd.CopilotChat)
 vim.keymap.set("n", '<leader>cs', function()
  ColorMyPencils()
 end)
@@ -11,7 +12,7 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- keep curor in middle when jumping 
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-j>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
@@ -23,3 +24,7 @@ vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+Y")
 
+
+-- swap between windows
+vim.api.nvim_set_keymap("n", "<leader><TAB>", "<C-w>w", {})
+vim.api.nvim_set_keymap("n", "<leader><S-TAB>", "<C-w>W", {})

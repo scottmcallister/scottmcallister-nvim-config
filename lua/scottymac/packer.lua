@@ -14,22 +14,7 @@ return require('packer').startup(function(use)
   use({
     'rose-pine/neovim',
     as = 'rose-pine',
-    config = function()
-	    vim.cmd('colorscheme rose-pine')
-    end
   })
-  use "rebelot/kanagawa.nvim"
-  use { "catppuccin/nvim", as = "catppuccin" }
-  use 'shaunsingh/nord.nvim'
-  use('nvim-lua/plenary.nvim')
-  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-  use('nvim-treesitter/playground')
-  use('theprimeagen/harpoon')
-  use 'mbbill/undotree'
-  use 'tpope/vim-fugitive'
-  use 'github/copilot.vim'
-  use 'nvim-tree/nvim-tree.lua'
-  use('CopilotC-Nvim/CopilotChat.nvim', { dependencies = { {'github/copilot.vim'}, { 'nvim-lua/plenary.nvim'  } } })
   use {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v3.x',
@@ -47,4 +32,17 @@ return require('packer').startup(function(use)
       {'L3MON4D3/LuaSnip'},
     }
   }
+  use "rebelot/kanagawa.nvim"
+  use { "catppuccin/nvim", as = "catppuccin" }
+  use 'shaunsingh/nord.nvim'
+  use('nvim-lua/plenary.nvim')
+  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+  use('nvim-treesitter/playground')
+  use('theprimeagen/harpoon')
+  use 'mbbill/undotree'
+  use 'tpope/vim-fugitive'
+  use 'github/copilot.vim'
+  use 'nvim-tree/nvim-tree.lua'
+  use('CopilotC-Nvim/CopilotChat.nvim', { dependencies = { {'github/copilot.vim'}, { 'nvim-lua/plenary.nvim'  } } })
+  use 'goolord/alpha-nvim'
 end)
