@@ -1,3 +1,5 @@
+default = "nord"
+
 require('kanagawa').setup({
     compile = false,             -- enable compiling the colorscheme
     undercurl = true,            -- enable undercurls
@@ -24,18 +26,31 @@ require('kanagawa').setup({
 })
 
 
-function ColorMyPencils()
-  options = {"rose-pine", "kanagawa-wave", "kanagawa-lotus", "kanagawa-dragon"}
+function ColorMyPencils(param)
+  options = {
+    "rose-pine",
+    "kanagawa-lotus",
+    "kanagawa-wave",
+    "kanagawa-dragon",
+    "catppuccin",
+    "catppuccin-macchiato",
+    "catppuccin-frappe",
+    "catppuccin-mocha",
+    "nord",
+  }
 
-  choice = tonumber(vim.fn.input("Enter a number between 1 and " .. #options .. ":"))
-
-  if choice < 1 or choice > #options then
-      print("Invalid choice. Please select a number between 1 and " .. #options)
+  if param then
+    color = param
   else
-      color = options[choice]
-  end
-	-- color = color or "rose-pine"
-	color = color or "kanagawa"
-	vim.cmd.colorscheme(color)
+    choice = tonumber(vim.fn.input("Enter a number between 1 and " .. #options .. ":"))
 
+    if choice < 1 or choice > #options then
+        print("Invalid choice. Please select a number between 1 and " .. #options)
+    else
+        color = options[choice]
+    end
+  end
+	vim.cmd.colorscheme(color)
 end
+
+ColorMyPencils(default)

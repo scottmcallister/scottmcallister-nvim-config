@@ -19,6 +19,8 @@ return require('packer').startup(function(use)
     end
   })
   use "rebelot/kanagawa.nvim"
+  use { "catppuccin/nvim", as = "catppuccin" }
+  use 'shaunsingh/nord.nvim'
   use('nvim-lua/plenary.nvim')
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('nvim-treesitter/playground')
