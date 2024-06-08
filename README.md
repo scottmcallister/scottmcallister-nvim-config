@@ -10,3 +10,4 @@ This is my personal neovim configuration.
 - `<leader>cc` - Copilot chat
 - `<leader>h` - Harpoon (bookmarking)
 - `<leader>a` - Add to Harpoon
+- `<leader>cs` - Change color scheme
