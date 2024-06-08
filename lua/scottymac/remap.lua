@@ -1,7 +1,22 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", '<leader>e', vim.cmd.NvimTreeFocus)
+
+-- Copilot stuff
 vim.keymap.set("n", '<leader>cc', vim.cmd.CopilotChat)
 vim.keymap.set("v", '<leader>cc', vim.cmd.CopilotChat)
+local copilot_on = true
+vim.api.nvim_create_user_command("CopilotToggle", function()
+	if copilot_on then
+		vim.cmd("Copilot disable")
+		print("Copilot OFF")
+	else
+		vim.cmd("Copilot enable")
+		print("Copilot ON")
+	end
+	copilot_on = not copilot_on
+end, { nargs = 0 })
+vim.keymap.set("n", "<leader>ct", ":CopilotToggle<CR>", { noremap = true, silent = true })
+
 vim.keymap.set("n", '<leader>cs', function()
  ColorMyPencils()
 end)
@@ -28,3 +43,6 @@ vim.keymap.set("n", "<leader>Y", "\"+Y")
 -- swap between windows
 vim.api.nvim_set_keymap("n", "<leader><TAB>", "<C-w>w", {})
 vim.api.nvim_set_keymap("n", "<leader><S-TAB>", "<C-w>W", {})
+
+-- packer sync
+vim.keymap.set("n", "<leader>ps", vim.cmd.PackerSync)

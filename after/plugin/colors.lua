@@ -1,4 +1,4 @@
-default = "nord"
+default = "rose-pine"
 
 require('kanagawa').setup({
     compile = false,             -- enable compiling the colorscheme
@@ -28,6 +28,10 @@ require('kanagawa').setup({
 
 function ColorMyPencils(param)
   options = {
+    "onedark",
+    "nord",
+    "tokyonight",
+    "everforest",
     "rose-pine",
     "kanagawa-lotus",
     "kanagawa-wave",
@@ -36,7 +40,6 @@ function ColorMyPencils(param)
     "catppuccin-macchiato",
     "catppuccin-frappe",
     "catppuccin-mocha",
-    "nord",
   }
 
   if param then

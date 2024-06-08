@@ -1,5 +1,3 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
-
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
@@ -11,10 +9,6 @@ return require('packer').startup(function(use)
     -- or                            , branch = '0.1.x',
       requires = { {'nvim-lua/plenary.nvim'} }
   }
-  use({
-    'rose-pine/neovim',
-    as = 'rose-pine',
-  })
   use {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v3.x',
@@ -32,9 +26,17 @@ return require('packer').startup(function(use)
       {'L3MON4D3/LuaSnip'},
     }
   }
+  use({
+    'rose-pine/neovim',
+    as = 'rose-pine',
+  })
+  use 'neanias/everforest-nvim'
+  use 'folke/tokyonight.nvim'
+  use 'navarasu/onedark.nvim'
   use "rebelot/kanagawa.nvim"
   use { "catppuccin/nvim", as = "catppuccin" }
   use 'shaunsingh/nord.nvim'
+  use 'goolord/alpha-nvim'
   use('nvim-lua/plenary.nvim')
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('nvim-treesitter/playground')
@@ -42,7 +44,7 @@ return require('packer').startup(function(use)
   use 'mbbill/undotree'
   use 'tpope/vim-fugitive'
   use 'github/copilot.vim'
+  use 'nvim-tree/nvim-web-devicons'
   use 'nvim-tree/nvim-tree.lua'
   use('CopilotC-Nvim/CopilotChat.nvim', { dependencies = { {'github/copilot.vim'}, { 'nvim-lua/plenary.nvim'  } } })
-  use 'goolord/alpha-nvim'
 end)
