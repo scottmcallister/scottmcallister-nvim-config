@@ -49,15 +49,6 @@ local shrek = {
 "         Vim is Life        ",
 }
 
-local title = {
-"  ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███   ",
-"  ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║  ",
-"  ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║  ",
-"  ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║  ",
-"  ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║  ",
-"  ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝  ",
-"                                                      ",
-}
 
 dashboard.section.header.val = shrek 
 
@@ -67,6 +58,7 @@ dashboard.section.buttons.val = {
     dashboard.button( "LDR fg", "  > Fuzzy grep" , "<leader>fg"),
     dashboard.button( "LDR e ", "  > Directory Tree" , "<leader>e"),
     dashboard.button( "LDR cc", "󰭻  > Copilot Chat" , "<leader>cc"),
+    dashboard.button( "LDR cs", "  > Color Scheme" , "<leader>cs"),
     dashboard.button( ":qa<CR>", "󰈆  > Quit NVIM", ":qa<CR>"),
 }
 
