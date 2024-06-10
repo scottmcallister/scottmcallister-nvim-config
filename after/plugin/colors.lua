@@ -40,6 +40,7 @@ function ColorMyPencils(param)
     "catppuccin-macchiato",
     "catppuccin-frappe",
     "catppuccin-mocha",
+    "sonokai",
   }
 
   if param then

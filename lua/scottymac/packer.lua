@@ -46,5 +46,6 @@ return require('packer').startup(function(use)
   use 'github/copilot.vim'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-tree/nvim-tree.lua'
+  use 'sainnhe/sonokai'
   use('CopilotC-Nvim/CopilotChat.nvim', { dependencies = { {'github/copilot.vim'}, { 'nvim-lua/plenary.nvim'  } } })
 end)

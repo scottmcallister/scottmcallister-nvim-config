@@ -209,6 +209,11 @@ _G.packer_plugins = {
     path = "/Users/smcallister/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
   },
+  sonokai = {
+    loaded = true,
+    path = "/Users/smcallister/.local/share/nvim/site/pack/packer/start/sonokai",
+    url = "https://github.com/sainnhe/sonokai"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/smcallister/.local/share/nvim/site/pack/packer/start/telescope.nvim",
