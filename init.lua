@@ -59,7 +59,7 @@ dashboard.section.buttons.val = {
     dashboard.button( "LDR e ", "  > Directory Tree" , "<leader>e"),
     dashboard.button( "LDR cc", "󰭻  > Copilot Chat" , "<leader>cc"),
     dashboard.button( "LDR cs", "  > Color Scheme" , "<leader>cs"),
-    dashboard.button( ":qa<CR>", "󰈆  > Quit NVIM", ":qa<CR>"),
+    dashboard.button( "LDR q ", "󰈆  > Quit NVIM", "<leader>q"),
 }
 
 -- Send config to alpha
