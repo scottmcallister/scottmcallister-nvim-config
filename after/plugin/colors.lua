@@ -76,21 +76,23 @@ function CloseMenu()
 end
 
 function ColorMyPencils(param)
-  options = {
-    "onedark",
-    "nord",
-    "tokyonight",
+  local options = {
+    "catppuccin",
+    "catppuccin-frappe",
+    "catppuccin-macchiato",
+    "catppuccin-mocha",
     "everforest",
-    "rose-pine",
     "kanagawa-lotus",
     "kanagawa-wave",
     "kanagawa-dragon",
-    "catppuccin",
-    "catppuccin-macchiato",
-    "catppuccin-frappe",
-    "catppuccin-mocha",
+    "nord",
+    "onedark",
+    "rose-pine",
     "sonokai",
+    "tokyonight",
   }
+
+  local color
 
   if param then
     color = param
