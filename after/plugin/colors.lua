@@ -105,3 +105,7 @@ function ColorMyPencils(param)
 end
 
 ColorMyPencils(default)
+
+vim.keymap.set("n", '<leader>cs', function()
+ ColorMyPencils()
+end)
