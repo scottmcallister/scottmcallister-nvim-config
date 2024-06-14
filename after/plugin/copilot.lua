@@ -16,6 +16,3 @@ end, { nargs = 0 })
 
 vim.keymap.set("n", "<leader>ct", ":CopilotToggle<CR>", { noremap = true, silent = true })
 
-vim.keymap.set("n", '<leader>cc', vim.cmd.CopilotChat)
-vim.keymap.set("v", '<leader>cc', vim.cmd.CopilotChat)
-
