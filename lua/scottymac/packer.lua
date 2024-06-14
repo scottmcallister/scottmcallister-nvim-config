@@ -26,12 +26,19 @@ return require('packer').startup(function(use)
     'rose-pine/neovim',
     as = 'rose-pine',
   })
+  use {
+  "ahmedkhalf/project.nvim",
+  config = function()
+    require("project_nvim").setup {}
+  end
+}
   use 'neanias/everforest-nvim'
   use 'folke/tokyonight.nvim'
   use 'navarasu/onedark.nvim'
   use "rebelot/kanagawa.nvim"
   use { "catppuccin/nvim", as = "catppuccin" }
   use 'shaunsingh/nord.nvim'
+  use 'AckslD/swenv.nvim'
   use 'goolord/alpha-nvim'
   use('nvim-lua/plenary.nvim')
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
