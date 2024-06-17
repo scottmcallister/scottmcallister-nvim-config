@@ -49,8 +49,50 @@ local shrek = {
 "         Vim is Life        ",
 }
 
+local mtg_blue = {
+"        ,+     ",
+"       ,%+     ",
+"       *@;     ",
+"      +#@+     ",
+"     ;###?     ",
+"    :S###S,    ",
+"    %@###@*    ",
+"   +#######:   ",
+"  ,S######@%   ",
+"  :#######%S;  ",
+"  +@######+;?  ",
+"  *@######;:S, ",
+"  *@######SSS, ",
+"  ;########@%  ",
+"   %@#######:  ",
+"   ,%#@#@#S;   ",
+"     ;*?*;,    ",
+"               ",
+}
 
-dashboard.section.header.val = shrek 
+local mtg_skull = {
+"                      ",
+"       ,;+***;,       ",
+"      +S#@@@@#S+      ",
+"    ,*?@#######?;     ",
+"   ,%@*S######S##+    ",
+"   *@#SS##########:   ",
+"  ,S##@@#########@?   ",
+"  ;##S?%######S*?##,  ",
+"  *@%,  ;####?,  *@;  ",
+"  *@;    %##S,   :@+  ",
+"  +@*:,,:S##S,,,:*@;  ",
+"  ,S@##S##%%##SS#@S,  ",
+"   ,+?S##S?*S###%?;   ",
+"      ,S@?+:S#%:      ",
+"      ,S#S?*#@?       ",
+"      ,S###@##%       ",
+"      ,#S#S#S#S       ",
+"      ,#?%S?+SS,      ",
+"      ,*+:+  ??       ",
+}
+
+dashboard.section.header.val = mtg_blue
 
 -- Set menu
 dashboard.section.buttons.val = {
@@ -69,3 +111,4 @@ alpha.setup(dashboard.opts)
 vim.cmd([[
     autocmd FileType alpha setlocal nofoldenable
 ]])
+               
