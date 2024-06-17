@@ -31,3 +31,6 @@ vim.api.nvim_set_keymap("n", "<leader><S-TAB>", "<C-w>W", {})
 
 -- packer sync
 vim.keymap.set("n", "<leader>ps", vim.cmd.PackerSync)
+
+-- shortcut to quit
+vim.keymap.set("n", "<leader>q", ":qa<CR>")
