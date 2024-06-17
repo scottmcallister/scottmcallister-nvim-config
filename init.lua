@@ -69,6 +69,30 @@ local mtg_blue = {
 "     ;*?*;,    ",
 "               ",
 }
+local better_blue = {
+"                ;;          ",
+"              ;?#+          ",
+"            ;?#@S           ",
+"           ?#@@@%           ",
+"         +S@@@@@S           ",
+"       ;%@@@@@@@@+          ",
+"      +#@@@@@@@@@#+         ",
+"     *@@@@@@@@@@@@#*        ",
+"    ?@@@@@@@@@@@@@@@%       ",
+"   ?@@@@@@@@@@@@@@@@@S+     ",
+"  *@@@@@@@@@@@@@@@@@#@@?    ",
+" ;#@@@@@@@@@@@@@@@@@?;S@%   ",
+" ?@@@@@@@@@@@@@@@@@@+ ;#@%  ",
+" %@@@@@@@@@@@@@@@@@%   *@@; ",
+" %@@@@@@@@@@@@@@@@@;   ?@@* ",
+" *@@@@@@@@@@@@@@@@@S??%#@@+ ",
+" ;#@@@@@@@@@@@@@@@@@@@@@@%  ",
+"  +#@@@@@@@@@@@@@@@@@@@@S;  ",
+"   ;%@@@@@@@@@@@@@@@@@#?    ",
+"     +%#@@@@@@@@@@@@S?;     ",
+"       ;+*?%SSS%%?*;        ",
+"                            ",
+}
 
 local mtg_skull = {
 "                      ",
@@ -92,7 +116,7 @@ local mtg_skull = {
 "      ,*+:+  ??       ",
 }
 
-dashboard.section.header.val = mtg_blue
+dashboard.section.header.val = better_blue 
 
 -- Set menu
 dashboard.section.buttons.val = {
@@ -111,4 +135,3 @@ alpha.setup(dashboard.opts)
 vim.cmd([[
     autocmd FileType alpha setlocal nofoldenable
 ]])
-               
