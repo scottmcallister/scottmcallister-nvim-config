@@ -5,8 +5,8 @@ This is my personal neovim configuration.
 ## commands
 
 - `<leader>e` - Open file explorer
-- `<leader>ff` - Fuzzy find files
-- `<leader>fg` - Fuzzy grep (text search)
+- `<leader>f` - Fuzzy find files
+- `<leader>g` - Fuzzy grep (text search)
 - `<leader>cc` - Copilot chat
 - `<leader>ct` - Toggle Copilot autocomplete 
 - `<leader>h` - Harpoon (bookmarking)

@@ -129,8 +129,8 @@ dashboard.section.header.val = mtg_white
 
 -- Set menu
 dashboard.section.buttons.val = {
-    dashboard.button( "LDR ff", "  > Find file", "<leader>ff"),
-    dashboard.button( "LDR fg", "  > Fuzzy grep" , "<leader>fg"),
+    dashboard.button( "LDR f ", "  > Find file", "<leader>f"),
+    dashboard.button( "LDR g ", "  > Fuzzy grep" , "<leader>g"),
     dashboard.button( "LDR e ", "  > Directory Tree" , "<leader>e"),
     dashboard.button( "LDR cc", "󰭻  > Copilot Chat" , "<leader>cc"),
     dashboard.button( "LDR cs", "  > Color Scheme" , "<leader>cs"),
