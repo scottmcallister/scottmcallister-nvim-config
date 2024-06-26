@@ -13,6 +13,7 @@ This is my personal neovim configuration.
 - `<leader>a` - Add to Harpoon
 - `<leader>cs` - Change color scheme
 - `<leader><TAB>` - Toggle between last two buffers
+- `<leader>/` - Comment line / selection
 
 ## installation
 
