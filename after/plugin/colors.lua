@@ -77,19 +77,14 @@ end
 
 function ColorMyPencils(param)
   local options = {
+    "tokyonight",
     "catppuccin",
-    "catppuccin-frappe",
-    "catppuccin-macchiato",
-    "catppuccin-mocha",
     "everforest",
-    "kanagawa-lotus",
     "kanagawa-wave",
-    "kanagawa-dragon",
     "nord",
     "onedark",
     "rose-pine",
     "sonokai",
-    "tokyonight",
   }
 
   local color
