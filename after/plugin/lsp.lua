@@ -25,6 +25,7 @@ require('mason-lspconfig').setup({
     'rust_analyzer',
     'pyright',
     'gopls',
+    'eslint',
   },
   handlers = {
     function(server_name)
