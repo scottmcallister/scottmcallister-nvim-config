@@ -53,5 +53,6 @@ return require('packer').startup(function(use)
   use 'terrortylor/nvim-comment'
   use 'jose-elias-alvarez/null-ls.nvim'
   use 'MunifTanjim/eslint.nvim'
+  use 'luckasRanarison/tailwind-tools.nvim'
   use('CopilotC-Nvim/CopilotChat.nvim', { dependencies = { {'github/copilot.vim'}, { 'nvim-lua/plenary.nvim'  } } })
 end)
