@@ -34,3 +34,7 @@ vim.keymap.set("n", "<leader>ps", vim.cmd.PackerSync)
 
 -- shortcut to quit
 vim.keymap.set("n", "<leader>q", ":qa<CR>")
+
+-- move selected text and keep it selected
+vim.api.nvim_set_keymap('v', '<', '<gv', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('v', '>', '>gv', {noremap = true, silent = true})
