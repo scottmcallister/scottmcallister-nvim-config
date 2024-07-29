@@ -78,7 +78,10 @@ cmp.setup({
   mapping = cmp.mapping.preset.insert({
     ['<C-k>'] = cmp.mapping.select_prev_item(cmp_select),
     ['<C-j>'] = cmp.mapping.select_next_item(cmp_select),
-    ['<CR>'] = cmp.mapping.confirm({ bdhavior = cmp.ConfirmBehavior.Replace, select = true }),
+    ['<CR>'] = cmp.mapping.confirm({
+        behavior = cmp.ConfirmBehavior.Replace,
+        select = true
+    }),
     ['<C-Space>'] = cmp.mapping.close(),
 
 
