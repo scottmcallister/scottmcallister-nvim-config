@@ -91,3 +91,5 @@ cmp.setup({
     end,
   },
 })
+
+require("lsp_lines").setup()
