@@ -6,7 +6,7 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 
 vim.opt.nu = true
-vim.opt.relativenumber = false
+vim.opt.relativenumber = true
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true

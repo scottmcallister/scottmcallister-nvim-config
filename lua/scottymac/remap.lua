@@ -38,3 +38,14 @@ vim.keymap.set("n", "<leader>q", ":qa<CR>")
 -- move selected text and keep it selected
 vim.api.nvim_set_keymap('v', '<', '<gv', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('v', '>', '>gv', {noremap = true, silent = true})
+
+vim.api.nvim_set_keymap('n', '<leader>l', ':lua ToggleRelativeNumber()<CR>', {noremap = true, silent = true})
+
+function ToggleRelativeNumber()
+    if vim.wo.relativenumber == true then
+        vim.wo.relativenumber = false
+    else
+        vim.wo.relativenumber = true
+    end
+end
+
