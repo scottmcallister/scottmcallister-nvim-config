@@ -27,6 +27,7 @@ require('mason-lspconfig').setup({
     'gopls',
     'eslint',
     'tailwindcss',
+    'rubocop',
   },
   handlers = {
     function(server_name)
