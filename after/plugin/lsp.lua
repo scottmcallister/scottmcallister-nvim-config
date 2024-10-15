@@ -21,13 +21,13 @@ local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
 require('mason').setup({})
 require('mason-lspconfig').setup({
   ensure_installed = {
-    'tsserver',
+    'ts_ls',
     'rust_analyzer',
     'pyright',
     'gopls',
     'eslint',
     'tailwindcss',
-    'rubocop',
+    'ruby_lsp',
   },
   handlers = {
     function(server_name)
@@ -51,6 +51,17 @@ require('mason-lspconfig').setup({
                 vim.env.VIMRUNTIME,
               }
             }
+          }
+        }
+      })
+    end,
+    ruby_lsp = function()
+      require('lspconfig').ruby_lsp.setup({
+        capabilities = lsp_capabilities,
+        settings = {
+          ruby = {
+            diagnostics = true,
+            formatting = true,
           }
         }
       })
