@@ -51,6 +51,10 @@ require('kanagawa').setup({
     },
 })
 
+require('rose-pine').setup({
+  variant = 'dawn',
+})
+
 
 function ShowMenu(opts, cb)
   local height = 20
