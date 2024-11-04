@@ -61,5 +61,10 @@ return require('packer').startup(function(use)
       require("lsp_lines").setup()
     end,
   })
-  use('CopilotC-Nvim/CopilotChat.nvim', { dependencies = { {'github/copilot.vim'}, { 'nvim-lua/plenary.nvim'  } } })
+  use('CopilotC-Nvim/CopilotChat.nvim', {
+    dependencies = {
+      {'github/copilot.vim'},
+      {'nvim-lua/plenary.nvim'}
+    }
+  })
 end)
